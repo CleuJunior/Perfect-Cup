@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 //Open a new connection to the database
-$mysqli = new msqli('localhost', 'root', 'root', 'perfectcup');
+$mysqli = new mysqli('localhost', 'root', 'root', 'perfectcup');
 
 //Output any connection error
 if ($mysqli->connect_error) die("Erro: ({$mysqli->connect_errno}) {$mysqli->connect_erro}");
